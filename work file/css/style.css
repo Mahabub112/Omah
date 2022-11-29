@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+    padding-left: 0;
+}
+a{
+    text-decoration: none  !important;
+}
+
+/* ==========================================
+    Nav bar Start
+==================================================*/
+nav{
+    background: #EEEDDE;
+}
+nav ul li{
+    margin-left: 100px;
+}
+nav ul li a{
+    font-family: "poppins", sans-serif;
+    
+    font-weight: 300;
+    font-size: 16px;
+    color: #203239;
+    transition: .4s;
+    position: relative;
+}
+nav ul li a i{
+    transition: .4s;
+}
+nav ul li .drovdown{
+    position: absolute;
+    top: 54px;
+    left: 0;
+    background:#EEEDDE ;
+    transform: rotateX(90deg);
+    transform-origin: top;
+    transition: .4s;
+}
+
+
+nav ul li .drovdown ul li{
+    margin-left: 0px;
+    border-bottom: 1px solid #F6762E;
+    padding: 12px 20px;
+}
+
+nav ul li a:hover i{
+    transform: rotate(177deg);
+}
+nav ul li a:hover{
+    font-weight: 600;
+}
+nav ul li a:after{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 23px;
+    height: 3px;
+    background: #F6762E;
+    content: " ";
+    border-radius: 10px;
+    opacity: 0;
+    transform: .4s;
+}
+nav ul li a:hover:after{
+    opacity: 1;
+}
+nav ul li:hover .drovdown{
+    transform: rotateX(0deg);
+    
+}
+/* ==========================================
+    Nav bar Start
+==================================================*/
+
+
+/* ==========================================
+    Banner Part Start
+==================================================*/
+#banner-item{
+    background: #EEEDDE;
+}
+#banner-item h1{
+    font-family: "poppins", sans-serif;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 150%;
+    margin-top: 100px;
+    margin-bottom: 24px;
+}
+#banner-item p{
+    font-family: "poppins", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    width: 544px;
+    color: rgba(32, 50, 57, .55) ;
+}
+#banner-item .search{
+    position: relative;
+    width: 675px;
+    margin-top: 56px;
+}
+
+#banner-item .search input{
+    width: 100%;
+    padding: 23px 0 23px 54px;
+    border: 1px solid #EEEDDE;
+    border-radius: 10px;
+}
+#banner-item .search input::placeholder{
+    font-family: "poppins", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    color: rgba(32, 50, 57, .55) ;
+}
+#banner-item .search i{
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+#banner-item .search button{
+    background: #203239;
+    color: #fff;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 13px 41px;
+    border-radius: 10px;
+    border: 0;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    -webkit-box-shadow: 0px 5px 17px 4px rgba(0,0,0,0.16);
+-moz-box-shadow: 0px 5px 17px 4px rgba(0,0,0,0.16);
+box-shadow: 0px 5px 17px 4px rgba(0,0,0,0.16);
+}
+
+
+#banner-item .box{
+    display: flex;
+    width: 640px;
+    margin-top: 56px;
+    margin-bottom: 60px;
+}
+#banner-item .box .item{
+    width: 30%;
+    margin-right: 52px;
+}
+#banner-item .box .item h2{
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    font-size: 56px;
+}
+#banner-item .box .item span{
+    margin-left: -12px;
+    color: #F6762E;
+}
+#banner-item .box .item p{
+    width: auto;
+}
+/* ==========================================
+   Banner Part End
+==================================================*/
+/* ==========================================
+   Propartis Part Start
+==================================================*/
+.propartis {
+    margin-top: 100px;
+}
+.propartis h2{
+    font-family: "poppins", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    width: 533px;
+    line-height: 150%;
+}
+.propartis .item{
+    width: 300px;
+    height: 300px;
+    border: 1px solid transparent;
+    padding: 30px;
+    margin-top: 64px;
+    transition: .4s;
+}
+.propartis .item h4{
+    font-family: "poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+}
+.propartis .item h4:after{
+    width: 8px;
+    height: 30px;
+    background: #F6762E;
+    border-radius: 5px;
+    position: absolute;
+    top: -5px;
+    left: -31px;
+    content: " ";
+}
+.propartis .item h4 span{
+    color: #F6762E;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.propartis .item p{
+    font-family: "poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(32, 50, 57, .55);
+    line-height: 30px;
+    margin-top: 25px;
+
+}
+.propartis .item a{
+    font-family: "poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 50px;
+    color: #203239;
+    position: relative;
+}
+.propartis .item a:after{
+    width: 40px;
+    height: 30px;
+    background: #FFFDDE;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    content: " ";
+    z-index: -1;
+    transition: .4s;
+}
+.propartis .item:hover a:after{
+    width: 100%;
+}
+.propartis .item a i{
+    margin-left: 14px;
+}
+.propartis .item:hover{
+    border-color: #EEEDDE;
+}
+/* ==========================================
+   Propartis Part End
+==================================================*/
+/* ==========================================
+   Recedent Part Start
+==================================================*/
+.recedent {
+    background: #EEEDDE;
+    margin-top: 100px;
+    padding: 60px 0;
+    padding-bottom: 161px;
+}
+.recedent .title p{
+    font-family: "poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #F6762E;
+}
+.recedent .title h2{
+    font-family: "poppins", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #203239;
+}
+.recedent .img{
+    position: relative;
+}
+.recedent .img .fontimg{
+    position: absolute;
+    top: 60px;
+    left: 167px;
+}
+/* ==========================================
+   Recedent Part End
+==================================================*/
+
